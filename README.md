@@ -39,7 +39,7 @@ The main advantage of this template, other than providing a general structure, i
   ```
 * **Progress bar:** The template uses `tqdm` package to show the progress of the training and validation processes, and it further shows the loss and metric values for each iteration and epoch. 
 ```
-Epoch [2/50]: 100%|██████████████████████████████████████████████████████| 221/221 [00:03<00:00, 69.48it/s, acc=0.27, loss=0.434]
+Epoch [2/50]: 100%|█████████████████████████████████| 221/221 [00:03<00:00, 69.48it/s, acc=0.27, loss=0.434]
 ```
 
 * **Metric and W&B:** The template record the value of the metric at each iteration and calculates the average of iterations for each batch. This will be shown on the graph on W&B website. 
