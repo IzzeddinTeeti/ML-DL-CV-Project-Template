@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train transformer models.")
     parser.add_argument(
         "--config_file",
-        default="configs/ViT_ROAD.yaml",
+        default="configs/Simple_MNIST.yaml",
         type=str,
         help="path to config file.",
     )
