@@ -13,16 +13,16 @@ This is a generic template for Machine Learning, Deep Learning, and Computer Vis
 ### 3. Train
 In the `train.py`, the following will be defined:
 * **Model:** The training starts by choosing the model that will be used to process the data (for example, it could be a simple NN, CNN, or a transformer), knowing that the model's parameters will be defined in the config file.
-* **Device/es:** The template contains a helper function to choose the available device/es (CPU or GPU) to process the data and whether multiple GPUs will be used. 
-* **Loss/es:** used to measure the model's performance and judge its progression/degradation through training (might be classification, regression, or multitask loss).
+* **Device(es):** The template contains a helper function to choose the available device(es) (CPU or GPU) to process the data and whether multiple GPUs will be used. 
+* **Loss(es):** used to measure the model's performance and judge its progression/degradation through training (might be classification, regression, or multitask loss).
 * **Optimiser:** that will drive the training towards convergence, enhance the model's performance, and reduce loss.
 * **Scheduler:** that will change the learning rate according to a defined trend (e.g. every certain number of steps).
 
 ### 4. Test
 During the test/validation process, there will be no grad, meaning the model does not learn, train, or change the values of its parameters. The model will be used mainly for processing the test/val data, then output a certain metric value to judge the model performance. Usually, the testing/validation process has the following attributes:
 * **model.eval() and no_grad:** This will shut down the model's training process.  
-* **Loss/es:** having the same loss for the training and testing makes sense to know if the model is over/underfitting.
-* **Metric/s:** which is necessary to measure the model performance on the specific task. Usually, the metric is not differentiable, unlike losses.
+* **Loss(es):** having the same loss for the training and testing makes sense to know if the model is over/underfitting.
+* **Metric(s):** which is necessary to measure the model performance on the specific task. Usually, the metric is not differentiable, unlike losses.
 
 ### 5. Helpers
 The main advantage of this template, other than providing a general structure, is the helper functions it contains, which are listed below:
